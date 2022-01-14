@@ -434,7 +434,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🌀 Extra Mods', callback_data='extra')
             ],[
             InlineKeyboardButton('🏡 Home', callback_data='start'),
-            InlineKeyboardButton('📶 Status', url='https://t.me/nmr_zone_movie')
+            InlineKeyboardButton('📶 Status', callback_data='stats')
 ')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
