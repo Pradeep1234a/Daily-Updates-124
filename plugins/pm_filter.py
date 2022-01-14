@@ -427,6 +427,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton('🏡 Home', callback_data='start'),
             InlineKeyboardButton('📶 Status', callback_data='stats')
+            ],[
+            InlineKeyboardButton('🔆 Manual Filters', callback_data='manuelfilter'),
+            InlineKeyboardButton('🔅 Auto Filter', callback_data='autofilter')
+            ],[
+            InlineKeyboardButton('🔗 Connection', callback_data='coct'),
+            InlineKeyboardButton('🌀 Extra Mods', callback_data='extra')
+            ],[
+            InlineKeyboardButton('🏡 Home', callback_data='start'),
+            InlineKeyboardButton('📶 Status', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
