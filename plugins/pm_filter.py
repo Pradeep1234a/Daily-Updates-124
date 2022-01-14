@@ -398,16 +398,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url='http://t.me/TeleRoid_AutoFilterBot?startgroup=true')
+            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url='http://t.me/DailyUpdates1234bot?startgroup=true')
             ],[
             InlineKeyboardButton('🔍 Search Here', switch_inline_query_current_chat=''),
             InlineKeyboardButton('🕵 Go Inline', switch_inline_query='')
             ],[
-            InlineKeyboardButton('⭕ Support ⭕', url='t.me/TeleRoid14'),
-            InlineKeyboardButton('⭕ Updates ⭕', url='https://t.me/TeleRoidGroup')
+            InlineKeyboardButton('📥My Movie chanell📥', url='https://t.me/nmr_zone_movie')
             ],[
-            InlineKeyboardButton('🆘 Help', callback_data='help'),
-            InlineKeyboardButton('👥 About', callback_data='about')
+            InlineKeyboardButton('😣Help😣', callback_data='help'),
+            InlineKeyboardButton('😕About😕', callback_data='about')
             ],[
             InlineKeyboardButton('🔐 Close', callback_data='close_data')
         ]]
@@ -435,7 +434,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🌀 Extra Mods', callback_data='extra')
             ],[
             InlineKeyboardButton('🏡 Home', callback_data='start'),
-            InlineKeyboardButton('📶 Status', callback_data='stats')
+            InlineKeyboardButton('📶 Status', url='https://t.me/nmr_zone_movie')
+')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
